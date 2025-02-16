@@ -18,7 +18,7 @@ obj/
 .vs/
 
 # Ignore build outputs
-dist/
+
 build/
 .vite/
 
