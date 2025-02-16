@@ -5,8 +5,9 @@ export default defineConfig({
   plugins: [vue()],
   server: {
     // allowedHosts: ["kr39t8-5173.csb.app"], // เพิ่มโฮสต์ที่อนุญาต
-    port: 1111, 
+    port: 8899, 
     strictPort: true,
   },
+  base: "/LInk-Bio.github.io/",
   
 });
