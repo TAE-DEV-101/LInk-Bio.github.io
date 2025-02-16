@@ -8,7 +8,7 @@ export default defineConfig({
   //   port: 8899, 
   //   strictPort: true,
   // },
-  base: "./LInk-Bio.github.io/",
+  base: "/LInk-Bio.github.io/",
   build: {
     rollupOptions: {
       input: "index.html", // ✅ ระบุ entry file ที่ถูกต้อง
