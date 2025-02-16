@@ -8,6 +8,6 @@ export default defineConfig({
   //   port: 8899, 
   //   strictPort: true,
   // },
-  base: "/LInk-Bio.github.io/",
+  base: "./LInk-Bio.github.io/",
   
 });
