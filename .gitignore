@@ -1,0 +1,37 @@
+# Ignore Node.js dependencies
+node_modules/
+
+# Ignore .NET build files
+bin/
+obj/
+**/bin/
+**/obj/
+**/.vs/
+**/**/.vs/
+**/*.suo
+4SP.NET/bin/
+4SP.NETobj/
+4SP.NET/.vs/
+4SP.NET/.vs/
+4SP.NET/*.suo
+# Ignore Visual Studio settings
+.vs/
+
+# Ignore build outputs
+
+build/
+.vite/
+
+# Ignore log files
+logs/
+*.log
+*.log.*
+
+# Ignore environment files
+.env
+.env.local
+.env.*.local
+
+# Ignore macOS & Windows system files
+.DS_Store
+Thumbs.db
