@@ -23,10 +23,6 @@ app.component(
   "WAVV",
   defineAsyncComponent(() => import("./components/WavBar.vue"))
 );
-app.component(
-  "sss",
-  defineAsyncComponent(() => import("./components/s.vue"))
-);
 
 
 app.use(router);
