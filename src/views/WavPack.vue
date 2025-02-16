@@ -76,7 +76,7 @@ export default {
           bpm: "30",
           thumbnail: "https://i.pinimg.com/736x/d5/be/cf/d5becf7720903b901cd931b8521c83dd.jpg",
           link: "https://www.youtube.com/watch?v=Jyvffr3aCp0",
-          src: "../../public/NikoB.mp3",
+          src: "NikoB.mp3",
         },
         {
           title: "Learn Vue 3 - Full Course",
@@ -84,7 +84,7 @@ export default {
           bpm: "120",
           thumbnail: "https://i.pinimg.com/736x/70/ae/03/70ae0311bfe00451f238bfe4f5aef43b.jpg",
           link: "https://www.youtube.com/watch?v=FXpIoQ_rT_c",
-          src: "../../public/JonB.mp3",
+          src: "JonB.mp3",
         },
         {
           title: "Step Me",
@@ -92,7 +92,7 @@ export default {
           bpm: "120",
           thumbnail: "https://i.pinimg.com/736x/e0/c5/22/e0c5221dabd94f7ff71a97667d535bd2.jpg",
           link: "https://www.youtube.com/watch?v=qZXt1Aom3Cs",
-          src: "../../public/JsonB.mp3",
+          src: "JsonB.mp3",
         },
         {
           title: "*DEVSTACK X RIO",
@@ -100,7 +100,7 @@ export default {
           bpm: "30",
           thumbnail: "https://i.pinimg.com/736x/d5/be/cf/d5becf7720903b901cd931b8521c83dd.jpg",
           link: "https://www.youtube.com/watch?v=Jyvffr3aCp0",
-          src: "../../public/NikoB.mp3",
+          src: "NikoB.mp3",
         },
         {
           title: "Learn Vue 3 - Full Course",
@@ -108,7 +108,7 @@ export default {
           bpm: "120",
           thumbnail: "https://i.pinimg.com/736x/70/ae/03/70ae0311bfe00451f238bfe4f5aef43b.jpg",
           link: "https://www.youtube.com/watch?v=FXpIoQ_rT_c",
-          src: "../../public/JonB.mp3",
+          src: "JonB.mp3",
         },
         {
           title: "Step Me",

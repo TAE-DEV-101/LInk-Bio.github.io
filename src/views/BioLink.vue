@@ -73,7 +73,7 @@ const socialLinks = ref([
 
 // Bio Links
 const bioLinks = ref([
-  { name: "Instagram", url: "/bio" },
+  { name: "Instagram", url: "/" },
   { name: ".WAV Pack", url: "/WavPack" },
   { name: "YouTube", url: "https://rianseo.com" },
   { name: "TikTok", url: "https://produk.temabanua.com" },
