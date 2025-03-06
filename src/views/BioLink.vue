@@ -20,20 +20,6 @@
             <h2 class="caption">{{ profileCaption }}</h2>
           </div>
         </div>
-        <!-- socialLinks -->
-        <!-- <div class="row">
-          <div class="col-12">
-            <ul class="social">
-              <li v-for="(social, index) in socialLinks" :key="index">
-                <router-link :to="social.url">
-                  <a :title="social.name">
-                    <i :class="social.icon"></i>
-                  </a>
-                </router-link>
-              </li>
-            </ul>
-          </div>
-        </div> -->
         <!-- bioLinks -->
         <div class="row">
           <div class="col-12 px-3">
@@ -58,18 +44,9 @@ import { ref } from "vue";
 
 // Profile Information
 const profileName = ref("TAE ");
-const profileCaption = ref("link kkk");
+const profileCaption = ref("this is the space for my various links.");
 const profileImage = ref("https://yt3.googleusercontent.com/ytc/AIdro_k4UwqHC-YBkLnmrrQLq5B6L-B3D_aCJ-6zhadHieFF9Ll0=s160-c-k-c0x00ffffff-no-rj");
 
-// Social Links
-const socialLinks = ref([
-  { name: "Facebook", url: "https://www.facebook.com/riyyanseo/", icon: "fab fa-facebook" },
-  { name: "Twitter", url: "https://twitter.com/rian_seo", icon: "fab fa-twitter" },
-  { name: "Instagram", url: "https://www.instagram.com/rian_seo/", icon: "fab fa-instagram" },
-  { name: "YouTube", url: "https://www.youtube.com/c/rianseo?sub_confirmation=1", icon: "fab fa-youtube" },
-  { name: "TikTok", url: "https://tiktok.com/rian_seo", icon: "fab fa-tiktok" },
-  { name: "GitHub", url: "https://github.com/rianseo", icon: "fab fa-github" },
-]);
 
 // Bio Links
 const bioLinks = ref([
