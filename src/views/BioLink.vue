@@ -89,12 +89,16 @@ const bioLinks = ref([
   justify-content: center;
 }
 
-.widget_bottom {
+/* .widget_bottom {
   width: 640px;
   text-align: center;
-  /* padding-bottom: 50px; */
+  padding-bottom: 50px;
+} */
+.widget_bottom {
+  max-width: 80%;
+  width: 100%;
+  text-align: center;
 }
-
 .img_story {
   padding: 1px;
   background: hsl(0, 0%, 0%);
