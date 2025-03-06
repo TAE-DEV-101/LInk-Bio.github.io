@@ -3,8 +3,8 @@
   <div class="fullscreen_white">
     <div class="container mt-4">
       <div class="row">
-        <!-- <div class="col-4 col-sm-4 col-md-4 col-lg-3 col-xl-2 mb-2 px-1" v-for="(video, index) in videos" :key="index"> -->
-        <div class="col-4 col-sm-4 col-md-4 col-lg-3 col-xl-2 mb-2 px-1" v-for="(video, index) in videos" :key="index">
+        <!-- <div class="col-4 col-sm-4 col-md-4 col-lg-3 col-xl-2 mb-2 px-1" v-for="(video, index) in WAV" :key="index"> -->
+        <div class="col-4 col-sm-4 col-md-4 col-lg-3 col-xl-2 mb-2 px-1" v-for="(video, index) in WAV" :key="index">
           <div @click="setaudio(video.src)">
 
             <div class="card-w" :class="{ 'playing': SrcAudio === video.src && OpenMusicBar }">
@@ -66,59 +66,11 @@
 </template>
 
 <script>
+import wav from "./wav.json";
 export default {
   data() {
     return {
-      videos: [
-        {
-          title: "*DEVSTACK X RIO",
-          genres: "HIPHOP",
-          bpm: "30",
-          thumbnail: "https://i.pinimg.com/736x/d5/be/cf/d5becf7720903b901cd931b8521c83dd.jpg",
-          link: "https://www.youtube.com/watch?v=Jyvffr3aCp0",
-          src: "NikoB.mp3",
-        },
-        {
-          title: "Learn Vue 3 - Full Course",
-          genres: "RnB,HIPHOP",
-          bpm: "120",
-          thumbnail: "https://i.pinimg.com/736x/70/ae/03/70ae0311bfe00451f238bfe4f5aef43b.jpg",
-          link: "https://www.youtube.com/watch?v=FXpIoQ_rT_c",
-          src: "JonB.mp3",
-        },
-        {
-          title: "Step Me",
-          genres: "PLUG,TRAP",
-          bpm: "120",
-          thumbnail: "https://i.pinimg.com/736x/e0/c5/22/e0c5221dabd94f7ff71a97667d535bd2.jpg",
-          link: "https://www.youtube.com/watch?v=qZXt1Aom3Cs",
-          src: "JsonB.mp3",
-        },
-        {
-          title: "*DEVSTACK X RIO",
-          genres: "HIPHOP",
-          bpm: "30",
-          thumbnail: "https://i.pinimg.com/736x/d5/be/cf/d5becf7720903b901cd931b8521c83dd.jpg",
-          link: "https://www.youtube.com/watch?v=Jyvffr3aCp0",
-          src: "NikoB.mp3",
-        },
-        {
-          title: "Learn Vue 3 - Full Course",
-          genres: "RnB,HIPHOP",
-          bpm: "120",
-          thumbnail: "https://i.pinimg.com/736x/70/ae/03/70ae0311bfe00451f238bfe4f5aef43b.jpg",
-          link: "https://www.youtube.com/watch?v=FXpIoQ_rT_c",
-          src: "JonB.mp3",
-        },
-        {
-          title: "Step Me",
-          genres: "PLUG,TRAP",
-          bpm: "120",
-          thumbnail: "https://i.pinimg.com/736x/e0/c5/22/e0c5221dabd94f7ff71a97667d535bd2.jpg",
-          link: "https://www.youtube.com/watch?v=qZXt1Aom3Cs",
-          src: "../../public/JsonB.mp3",
-        },
-      ],
+      WAV: wav,
       OpenMusicBar: false,
       currentAudio: "",
       SrcAudio: "",
@@ -150,11 +102,11 @@ export default {
       }
     },
     NextAudio() {
-      const currentIndex = this.videos.findIndex(video => video.src === this.SrcAudio);
-      if (currentIndex < this.videos.length - 1) {
-        this.SrcAudio = this.videos[currentIndex + 1].src;
+      const currentIndex = this.WAV.findIndex(video => video.src === this.SrcAudio);
+      if (currentIndex < this.WAV.length - 1) {
+        this.SrcAudio = this.WAV[currentIndex + 1].src;
       } else {
-        this.SrcAudio = this.videos[0].src;
+        this.SrcAudio = this.WAV[0].src;
       }
 
       this.$nextTick(() => {
@@ -166,11 +118,11 @@ export default {
       });
     },
     PrevAudio() {
-      const currentIndex = this.videos.findIndex(video => video.src === this.SrcAudio);
+      const currentIndex = this.WAV.findIndex(video => video.src === this.SrcAudio);
       if (currentIndex > 0) {
-        this.SrcAudio = this.videos[currentIndex - 1].src;
+        this.SrcAudio = this.WAV[currentIndex - 1].src;
       } else {
-        this.SrcAudio = this.videos[this.videos.length - 1].src; // วนกลับไปเพลงสุดท้าย
+        this.SrcAudio = this.WAV[this.WAV.length - 1].src; // วนกลับไปเพลงสุดท้าย
       }
 
       this.$nextTick(() => {
