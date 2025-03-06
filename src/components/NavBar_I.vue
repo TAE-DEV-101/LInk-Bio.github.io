@@ -34,8 +34,7 @@
                             </svg> -->
                         </div>
                         <div class="nav-item">
-                            <router-link to="/bio">Home</router-link>
-
+                            <router-link to="/">Home</router-link>
                         </div>
                         <div class="nav-item dropdown" hidden>
                             <a href="#" class="nav-link dropdown-toggle" id="productsDropdown" role="button"
