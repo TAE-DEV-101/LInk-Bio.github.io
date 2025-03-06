@@ -1,6 +1,8 @@
 import { createRouter, createWebHistory } from "vue-router";
 
-const routes = [
+const routes = createRouter({
+  history: createWebHistory(),
+  routes: [
   {
     path: "/",
     name: "BIO",
@@ -21,13 +23,8 @@ const routes = [
     path: "/WavPack",
     name: "WavPack",
     component: () => import("../views/WavPack.vue"),
-  },
-];
-
-const router = createRouter({
-  //   history: createWebHistory(process.env.BASE_URL),
-  history: createWebHistory(),
-  routes,
+  },]
 });
 
-export default router;
+
+export default routes;
