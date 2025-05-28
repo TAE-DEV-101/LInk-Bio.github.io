@@ -10,7 +10,42 @@
     "title": "002",
     "genres": "PLUG",
     "bpm": "140",
-    "thumbnail": "https://i.pinimg.com/736x/11/2e/d1/112ed13b65435c064ea0f3efa4ba0151.jpg",
+    "thumbnail": "https://i.pinimg.com/736x/2c/6b/4b/2c6b4bde628e8de853f80063dcbb446d.jpg",
     "src": "./wav/Southsidesilhouette140.mp3"
+  },
+  {
+    "title": "003",
+    "genres": "-",
+    "bpm": "144",
+    "thumbnail": "https://i.pinimg.com/736x/2c/6b/4b/2c6b4bde628e8de853f80063dcbb446d.jpg",
+    "src": "./wav/aoa144.wav"
+  },
+  {
+    "title": "004",
+    "genres": "-",
+    "bpm": "160",
+    "thumbnail": "https://i.pinimg.com/736x/2c/6b/4b/2c6b4bde628e8de853f80063dcbb446d.jpg",
+    "src": "./wav/sosa160.wav"
+  },
+  {
+    "title": "005",
+    "genres": "-",
+    "bpm": "148",
+    "thumbnail": "https://i.pinimg.com/736x/2c/6b/4b/2c6b4bde628e8de853f80063dcbb446d.jpg",
+    "src": "./wav/xo148.wav"
+  },
+  {
+    "title": "006",
+    "genres": "sgpwes",
+    "bpm": "157",
+    "thumbnail": "https://i.pinimg.com/736x/2c/6b/4b/2c6b4bde628e8de853f80063dcbb446d.jpg",
+    "src": "./wav/xox157.wav"
+  },
+  {
+    "title": "007",
+    "genres": "-",
+    "bpm": "137",
+    "thumbnail": "https://i.pinimg.com/736x/2c/6b/4b/2c6b4bde628e8de853f80063dcbb446d.jpg",
+    "src": "./wav/xox137.wav"
   }
 ]
