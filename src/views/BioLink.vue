@@ -24,9 +24,16 @@
         <div class="row">
           <div class="col-12 px-3">
             <div class="bioLink" v-for="(link, index) in bioLinks" :key="index">
-              <router-link :to="link.url">
-                <btn_macosx class="mt-3" :label="link.name" />
-              </router-link>
+              <template v-if="link.url.startsWith('http')">
+                <a :href="link.url" target="_blank" rel="noopener">
+                  <btn_macosx class="mt-3" :label="link.name" />
+                </a>
+              </template>
+              <template v-else>
+                <router-link :to="link.url">
+                  <btn_macosx class="mt-3" :label="link.name" />
+                </router-link>
+              </template>
             </div>
           </div>
         </div>
@@ -52,15 +59,14 @@ const profileImage = ref("https://yt3.googleusercontent.com/ytc/AIdro_k4UwqHC-YB
 const bioLinks = ref([
   { name: "Instagram", url: "/" },
   { name: ".WAV Pack", url: "/WavPack" },
-  { name: "YouTube", url: "https://rianseo.com" },
-  { name: "TikTok", url: "https://produk.temabanua.com" },
-  { name: "Shop", url: "https://www.whatsapp.com/catalog/6285886624531" },
+  { name: "YouTube", url: "https://www.youtube.com/@taekix8622" },
+  { name: "TikTok", url: "https://www.tiktok.com/th-TH/" },
+  { name: "Shop", url: "https://www.worldone.in/cdn/shop/products/cm_1024x1024.jpg?v=1677495322" },
   { name: " .", url: "" },
 ]);
 </script>
 
 <style scoped>
-
 .container {
   display: flex;
   justify-content: center;
@@ -76,6 +82,7 @@ const bioLinks = ref([
   width: 100%;
   text-align: center;
 }
+
 .img_story {
   padding: 1px;
   background: hsl(0, 0%, 0%);
